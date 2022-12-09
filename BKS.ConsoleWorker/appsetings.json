@@ -1,0 +1,32 @@
+{
+  "ApiUrls": {
+    "AddUserMessage": "https://localhost:5000/api/UserMessages/addMessage",
+    "GetLastUserMessage": "https://localhost:5000/api/UserMessages/getLastMessage/",
+    "GetUserMessages": "https://localhost:5000/api/UserMessages/getMessages/",
+    "DeleteMessageByIdAndUserId": "https://localhost:5000/api/UserMessages/deleteMessage"
+  },
+  "Serilog": {
+    "MinimumLevel": {
+      "Default": "Information",
+      "Override": {
+        "Microsoft": "Warning",
+        "Microsoft.AspNetCore": "Warning",
+        "System": "Error"
+      }
+    },
+    "Using": [ "Serilog.Sinks.Console" ],
+    "WriteTo": [
+      {
+        "Name": "Console"
+      }
+    ]
+  },
+  "exclude": [
+    "**/bin",
+    "**/bower_components",
+    "**/jspm_packages",
+    "**/node_modules",
+    "**/obj",
+    "**/platforms"
+  ]
+}
