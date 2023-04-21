@@ -5,6 +5,7 @@ using Microsoft.Extensions.Hosting;
 using Serilog;
 
 Log.Information($"Console service started {DateTime.UtcNow}");
+Log.Information("test");
 
 Log.Logger = new LoggerConfiguration()
     .CreateLogger();
